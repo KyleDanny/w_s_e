@@ -1,0 +1,15 @@
+# Ignore lambda node_modules
+infra/lambda/node_modules/
+infra/lambda/env/
+infra/lambda/dist/
+infra/.DS_Store
+# Ignore sensor-simulator node_modules
+sensor-simulator/node_modules/
+sensor-simulator/env/
+sensor-simulator/.DS_Store
+
+# Ignore weather-frontend node_modules
+weather-frontend/node_modules/
+weather-frontend/.DS_Store
+
+.DS_Store
