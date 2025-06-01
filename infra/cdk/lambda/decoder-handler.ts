@@ -13,7 +13,8 @@ export const handler = async (event: any) => {
     }
 
     const isBase64Encoded = event.isBase64Encoded;
-    console.log("🔍 isBase64Encoded:", isBase64Encoded);
+    console.log(">>> isBase64Encoded:", isBase64Encoded);
+
     const binaryBuffer = isBase64Encoded
       ? Buffer.from(event.body, "base64")
       : Buffer.from(event.body);
@@ -25,8 +26,8 @@ export const handler = async (event: any) => {
     const uint8 = new Uint8Array(binaryBuffer);
     const weather = decodeWeatherData(uint8);
 
-    console.log("🔍 Decoding raw buffer:", uint8);
-    console.log("🔍 Decoded deviceId:", weather);
+    console.log(">>> Decoding raw buffer:", uint8);
+    console.log(">>> Decoded deviceId:", weather);
 
     // Store decoded data in DynamoDB
     await db.send(
@@ -46,7 +47,7 @@ export const handler = async (event: any) => {
       body: JSON.stringify({ message: "Weather data saved" }),
     };
   } catch (err) {
-    console.error("❌ Failed to process binary data:", err);
+    console.error(">>> Failed to process binary data:", err);
     return {
       statusCode: 500,
       body: JSON.stringify({ error: "Internal server error" }),

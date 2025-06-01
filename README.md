@@ -107,7 +107,7 @@ bun run dev
 ### ❌ `deviceId` empty in DynamoDB / decoder Lambda
 
 - **Cause:** `Uint8Array` sent directly via Axios was misinterpreted by API Gateway
-- **Fix:** Used `Buffer.from(...).toString('base64')` and enabled `isBase64Encoded` in the Lambda
+- **Fix:** Used `Buffer.from(event.body, "base64")` and enabled `isBase64Encoded` in the Lambda
 
 ---
 
@@ -122,9 +122,9 @@ bun run dev
 
 - **Cause:** Route not matching due to missing headers or incorrect handler config
 - **Fixes:**
-  - Set `x-device-id` header in simulator
-  - Used correct handler names (`index.handler`)
-  - Corrected `content-type` to `application/octet-stream`
+  - Set `x-device-id` header in simulator, moved away from this
+  - Used incorrect handler names at first, correct (`index.handler`)
+  - Corrected `content-type` to `application/octet-stream`, when moving from 1st iteration of a json payload
   - Deployed updated CDK stack with binary media type support
   - Updated API payload and seeded data generator to include `deviceId`
 
@@ -138,15 +138,15 @@ bun run dev
 
 ### ❌ Tailwind not working in frontend
 
-**Cause**: Misconfigured PostCSS or missing directives.  
-**Solution**: Followed [Tailwind Vite setup](https://tailwindcss.com/docs/installation/using-vite) precisely, ensured `@tailwind base/components/utilities` were imported.
+**Cause**: Misconfigured PostCSS or missing directives, had missed the Vite config with tailwind.  
+**Solution**: Followed [Tailwind Vite setup](https://tailwindcss.com/docs/installation/using-vite) precisely, ensured `@tailwindcss` were imported into index.css.
 
 ---
 
 ### ❌ Lambda POST API returning 404 or missing `deviceId`
 
 **Cause**: Only GET was configured in API Gateway.  
-**Solution**: Added support for POST route, updated Lambda handler to parse JSON body.
+**Solution**: Added support for POST route, updated Lambda handler to parse JSON body, and removed defaultIntegration.
 
 ---
 
@@ -197,7 +197,8 @@ deviceId: 20 bytes, encoded using TextEncoder and padded/truncated to fixed leng
 
 - The system simulates real-world IoT latency, encoding, and ingestion.
 - Payload format = 4 bytes timestamp + 2 bytes temp + 2 bytes humidity + 20 bytes deviceId
-- Focus was placed on optimizing developer experience, clear data flow, and realistic frontend behavior.
+- Focus was placed on optimizing developer experience, clear data flow, and realistic frontend behavior
+- Focus on modularity in file structure and grouping, as well as component structure in frontend. Clear separation of concerns
 - Binary data is base64-encoded for API Gateway compatibility
 - DynamoDB uses deviceId as partition key and timestamp as sort key
 
