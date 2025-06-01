@@ -6,18 +6,38 @@ This project simulates live binary-encoded weather data from multiple IoT weathe
 
 ## 🛠 Tech Stack
 
-- **Frontend**: React + TypeScript (Vite) with TailwindCSS, Recharts
-- **Backend**: AWS CDK (TypeScript), Lambda, API Gateway (HTTP API v2), DynamoDB
 - **Simulator**: Node.js (Bun), binary encoding/decoding, seeded payloads
+- **Backend**: AWS CDK (TypeScript), Lambda, API Gateway (HTTP API v2), DynamoDB
+- **Frontend**: React + TypeScript (Vite) with TailwindCSS, Recharts
 
-## 🧱 Backend Infra/CDK Project Structure
+## 📦 Project Structure
 
-- `simulator.ts` — Sends data as binary payloads (live or local mode)
-- `encode.ts / decode.ts` — Encode and decode weather data (binary format)
-- `decoder-handler.ts` — Lambda function to process binary payloads
+```
+.
+├── diagram                 # Visual idea of how the wind farm functions
+├── infra/cdk/              # AWS infrastructure (CDK)
+  ├──> infra/cdk/lambda/    # Weather + API handlers
+├── sensor-simulator/       # Simulated binary data + streamer
+├── weather-frontend/       # React app (Vite)
+```
+
+# Simulator /sensor-simulator
+
+- `generate-seeded-data.ts` — Seed a json payload of weather data for 5 x stations
+- `encode.ts` — Encode weather data (binary format)
+- `simulated_payloads.json` — List of weather readings for simulation per station
+- `simulator.ts` — Encodes, and sends data as binary payloads (live or local mode)
+
+# Backend /infra/CDK
+
+- `decode.ts` — Decode weather data (binary format)
+- `decoder-handler.ts` — Lambda function to process binary payloads on events
 - `api-handler.ts` — Lambda to expose GET endpoint for frontend
 - `iot-processor-stack.ts` — CDK stack to provision API Gateway, Lambdas, and DynamoDB
-- `simulated_payloads.json` — List of weather readings for simulation
+
+# Frontend /weather-frontend
+
+- `App.tsx` — Display data from API using a component-like modular approach in a dynamic manner (polling for live data)
 
 ---
 
@@ -39,20 +59,7 @@ This project simulates live binary-encoded weather data from multiple IoT weathe
 
 ---
 
-## 📦 Project Structure
-
-```
-.
-├── frontend/               # React app (Vite)
-├── sensor-simulator/       # Simulated binary data + streamer
-├── infra/cdk/              # AWS infrastructure (CDK)
-├── infra/cdk/lambda/       # Weather + API handlers
-├── diagram                 # Visual idea of how the wind farm functions
-```
-
----
-
-## 🧪 Running the Simulation
+## 🌱 Running the Simulation
 
 Generate binary payloads from /sensor-simlator:
 
@@ -74,6 +81,16 @@ bun install
 bun run build-decoder-handler   # Bundle the decoder handler
 bun run build-api-handler       # Bundle the API handler
 npx cdk deploy                  # OR Bundle both of the above, and deploy
+```
+
+---
+
+## 🦾 Running the frontend
+
+```bash
+cd weather-frontend
+bun install
+bun run dev
 ```
 
 ---
@@ -164,14 +181,6 @@ POST /upload
 
 ---
 
-## 🧠 Final Notes
-
-- The system simulates real-world IoT latency, encoding, and ingestion.
-- Payload format = 4 bytes timestamp + 2 bytes temp + 2 bytes humidity + 20 bytes deviceId
-- Focus was placed on optimizing developer experience, clear data flow, and realistic frontend behavior.
-- Binary data is base64-encoded for API Gateway compatibility
-- DynamoDB uses deviceId as partition key and timestamp as sort key
-
 ## 📦 Payload Format
 
 timestamp: 4 bytes (Uint32)
@@ -181,6 +190,16 @@ temperature: 2 bytes (Int16, multiplied by 100)
 humidity: 2 bytes (Uint16, multiplied by 100)
 
 deviceId: 20 bytes, encoded using TextEncoder and padded/truncated to fixed length
+
+---
+
+## 🧠 Final Notes
+
+- The system simulates real-world IoT latency, encoding, and ingestion.
+- Payload format = 4 bytes timestamp + 2 bytes temp + 2 bytes humidity + 20 bytes deviceId
+- Focus was placed on optimizing developer experience, clear data flow, and realistic frontend behavior.
+- Binary data is base64-encoded for API Gateway compatibility
+- DynamoDB uses deviceId as partition key and timestamp as sort key
 
 ---
 
