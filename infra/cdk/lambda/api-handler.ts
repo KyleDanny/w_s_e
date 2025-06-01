@@ -79,7 +79,7 @@ export const handler = async (event: any) => {
       body: JSON.stringify({ error: "Method not allowed" }),
     };
   } catch (err: any) {
-    console.error("❌ Error in API handler:", err);
+    console.error(">>> Error in API handler:", err);
 
     return {
       statusCode: 400,

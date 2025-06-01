@@ -13,13 +13,13 @@ const payloads: any[] = JSON.parse(
   )
 );
 
-console.log(`📦 Loaded ${payloads.length} entries — mode: ${mode}`);
+console.log(`>>> Loaded ${payloads.length} entries — mode: ${mode}`);
 
 let index = 0;
 
 const interval = setInterval(async () => {
   if (index >= payloads.length) {
-    console.log("✅ Finished sending all entries");
+    console.log(">>> Finished sending all entries");
     clearInterval(interval);
     return;
   }
@@ -35,12 +35,12 @@ const interval = setInterval(async () => {
           "Content-Type": "application/octet-stream",
         },
       });
-      console.log(`✅ Sent to API: ${JSON.stringify(encoded)}`);
+      console.log(`>>> Sent to API: ${JSON.stringify(encoded)}`);
     } catch (error) {
-      console.error("❌ API Error:", (error as any).message);
+      console.error(">>> API Error:", (error as any).message);
     }
   } else {
-    console.log(`🔁 Simulated MQTT -> ${JSON.stringify(payload)}`);
+    console.log(`>>> Simulated MQTT -> ${JSON.stringify(payload)}`);
   }
 
   index++;
