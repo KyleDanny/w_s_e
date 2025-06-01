@@ -55,7 +55,6 @@ This project simulates live binary-encoded weather data from multiple IoT weathe
 - Unit toggle: °C ↔ °F
 - Filter by device (up to 5 simulated devices)
 - Export table to CSV
-- Simulation system generates realistic sensor readings
 
 ---
 

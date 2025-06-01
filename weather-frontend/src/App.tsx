@@ -117,8 +117,6 @@ function App() {
 
       {!loading && !error && (
         <>
-          <DataTable data={data} unit={unit} convertTemp={convertTemp} />
-
           <h2 className="text-lg font-semibold mb-4">📈 Live Data Charts</h2>
           <div className="grid grid-cols- md:grid-cols-2 gap-6 mb-10">
             <LineChartComponent
@@ -141,6 +139,8 @@ function App() {
               strokeColor="#387908"
             />
           </div>
+
+          <DataTable data={data} unit={unit} convertTemp={convertTemp} />
         </>
       )}
     </div>
