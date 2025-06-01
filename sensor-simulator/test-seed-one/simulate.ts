@@ -1,8 +1,6 @@
 import fs from "fs";
 import path from "path";
-import { encodeWeatherData } from "./encode";
-
-// testing encoding logic, one-off payload generation.
+import { encodeWeatherData } from "../encode";
 
 /**
  * Generates a single simulated data point
@@ -28,7 +26,6 @@ function runSimulation() {
 
   console.log(`Simulated reading: ${JSON.stringify(reading)}`);
 
-  // Optionally write to file
   const filePath = path.join(__dirname, "last-reading.bin");
   fs.writeFileSync(filePath, encoded);
 

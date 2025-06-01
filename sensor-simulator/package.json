@@ -6,8 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "jest",
-    "single-run": "bun simulate.ts",
-    "generate-seeded-data": "bun generate-seeded-data.ts",
+    "test-seed-one": "bun test-seed-one/simulate.ts",
+    "generate-seeded-data": "bun seeding/generate-seeded-data.ts",
     "simulate:local": "bun simulator.ts",
     "simulate:live": "bun simulator.ts --mode=live"
   },

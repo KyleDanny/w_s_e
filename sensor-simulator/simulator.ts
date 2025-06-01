@@ -6,7 +6,10 @@ const args = process.argv.slice(2);
 const mode = args.includes("--mode=live") ? "live" : "local";
 
 const payloads: any[] = JSON.parse(
-  fs.readFileSync(path.join(__dirname, "simulated_payloads.json"), "utf-8")
+  fs.readFileSync(
+    path.join(__dirname, "seeding/simulated_payloads.json"),
+    "utf-8"
+  )
 );
 
 console.log(`📦 Loaded ${payloads.length} entries — mode: ${mode}`);

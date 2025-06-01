@@ -1,0 +1,3002 @@
+[
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773110,
+    "temperature": 24.47,
+    "humidity": 76.33
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773111,
+    "temperature": 16.47,
+    "humidity": 56.59
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773112,
+    "temperature": 21.08,
+    "humidity": 60.75
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773113,
+    "temperature": 11.22,
+    "humidity": 41.62
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773114,
+    "temperature": 24.69,
+    "humidity": 47.51
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773115,
+    "temperature": 18.66,
+    "humidity": 69.43
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773116,
+    "temperature": 19.07,
+    "humidity": 74.18
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773117,
+    "temperature": 10.99,
+    "humidity": 73.21
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773118,
+    "temperature": 22.62,
+    "humidity": 78.96
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773119,
+    "temperature": 12.86,
+    "humidity": 67.95
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773120,
+    "temperature": 23.55,
+    "humidity": 60.91
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773121,
+    "temperature": 15.81,
+    "humidity": 51.94
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773122,
+    "temperature": 18.91,
+    "humidity": 62.58
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773123,
+    "temperature": 19.11,
+    "humidity": 51.9
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773124,
+    "temperature": 13.91,
+    "humidity": 62.28
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773125,
+    "temperature": 19.42,
+    "humidity": 75.08
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773126,
+    "temperature": 13.18,
+    "humidity": 51.34
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773127,
+    "temperature": 21.04,
+    "humidity": 66.58
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773128,
+    "temperature": 19.33,
+    "humidity": 50.86
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773129,
+    "temperature": 18.74,
+    "humidity": 48.42
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773130,
+    "temperature": 16.59,
+    "humidity": 78.34
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773131,
+    "temperature": 11.78,
+    "humidity": 41.18
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773132,
+    "temperature": 15.57,
+    "humidity": 41.17
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773133,
+    "temperature": 12.01,
+    "humidity": 75.93
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773134,
+    "temperature": 20.93,
+    "humidity": 69.68
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773135,
+    "temperature": 20.75,
+    "humidity": 53.48
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773136,
+    "temperature": 23.92,
+    "humidity": 78.63
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773137,
+    "temperature": 16.31,
+    "humidity": 75.61
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773138,
+    "temperature": 15.5,
+    "humidity": 59.24
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773139,
+    "temperature": 13.48,
+    "humidity": 77.44
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773140,
+    "temperature": 15,
+    "humidity": 61.36
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773141,
+    "temperature": 23.12,
+    "humidity": 57.51
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773142,
+    "temperature": 12.32,
+    "humidity": 70.76
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773143,
+    "temperature": 14.79,
+    "humidity": 68.83
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773144,
+    "temperature": 18.15,
+    "humidity": 68.88
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773145,
+    "temperature": 22.23,
+    "humidity": 71.55
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773146,
+    "temperature": 24.89,
+    "humidity": 59.82
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773147,
+    "temperature": 19.82,
+    "humidity": 76.57
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773148,
+    "temperature": 24.48,
+    "humidity": 66.27
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773149,
+    "temperature": 17.18,
+    "humidity": 54.57
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773150,
+    "temperature": 23.44,
+    "humidity": 68.27
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773151,
+    "temperature": 10.19,
+    "humidity": 76.14
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773152,
+    "temperature": 16.48,
+    "humidity": 57.39
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773153,
+    "temperature": 21.22,
+    "humidity": 56.03
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773154,
+    "temperature": 19.3,
+    "humidity": 78.05
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773155,
+    "temperature": 15.77,
+    "humidity": 41.62
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773156,
+    "temperature": 23.53,
+    "humidity": 41.84
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773157,
+    "temperature": 19.54,
+    "humidity": 73
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773158,
+    "temperature": 10.11,
+    "humidity": 69.77
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773159,
+    "temperature": 15.17,
+    "humidity": 62.2
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773160,
+    "temperature": 15.53,
+    "humidity": 76.47
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773161,
+    "temperature": 17.9,
+    "humidity": 76.64
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773162,
+    "temperature": 16.56,
+    "humidity": 41.08
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773163,
+    "temperature": 17.36,
+    "humidity": 46.61
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773164,
+    "temperature": 18.9,
+    "humidity": 78.09
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773165,
+    "temperature": 18.24,
+    "humidity": 51.96
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773166,
+    "temperature": 11.38,
+    "humidity": 55.71
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773167,
+    "temperature": 19.24,
+    "humidity": 74.76
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773168,
+    "temperature": 13.2,
+    "humidity": 51.03
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773169,
+    "temperature": 10.23,
+    "humidity": 42.93
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773170,
+    "temperature": 22.72,
+    "humidity": 73.01
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773171,
+    "temperature": 10.24,
+    "humidity": 44.92
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773172,
+    "temperature": 19.96,
+    "humidity": 56.78
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773173,
+    "temperature": 23.08,
+    "humidity": 49.07
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773174,
+    "temperature": 24.6,
+    "humidity": 71.28
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773175,
+    "temperature": 18.46,
+    "humidity": 69.25
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773176,
+    "temperature": 22.23,
+    "humidity": 48.25
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773177,
+    "temperature": 18.9,
+    "humidity": 55
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773178,
+    "temperature": 14.35,
+    "humidity": 44.81
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773179,
+    "temperature": 22.1,
+    "humidity": 62.64
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773180,
+    "temperature": 23.76,
+    "humidity": 68
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773181,
+    "temperature": 15.03,
+    "humidity": 55.4
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773182,
+    "temperature": 13.53,
+    "humidity": 47.88
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773183,
+    "temperature": 16.69,
+    "humidity": 71.47
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773184,
+    "temperature": 20.32,
+    "humidity": 55.54
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773185,
+    "temperature": 20.11,
+    "humidity": 44.12
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773186,
+    "temperature": 23.62,
+    "humidity": 42.8
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773187,
+    "temperature": 14.81,
+    "humidity": 57.09
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773188,
+    "temperature": 20.59,
+    "humidity": 74.68
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773189,
+    "temperature": 12.93,
+    "humidity": 62.84
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773190,
+    "temperature": 22.89,
+    "humidity": 50.46
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773191,
+    "temperature": 19.16,
+    "humidity": 56.4
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773192,
+    "temperature": 17.72,
+    "humidity": 66.61
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773193,
+    "temperature": 12.23,
+    "humidity": 69.89
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773194,
+    "temperature": 21.37,
+    "humidity": 71.72
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773195,
+    "temperature": 18.23,
+    "humidity": 67.83
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773196,
+    "temperature": 13.56,
+    "humidity": 75.79
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773197,
+    "temperature": 11.69,
+    "humidity": 70.68
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773198,
+    "temperature": 10.52,
+    "humidity": 41.55
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773199,
+    "temperature": 22.09,
+    "humidity": 46.53
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773200,
+    "temperature": 11.91,
+    "humidity": 44.82
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773201,
+    "temperature": 14.13,
+    "humidity": 74.22
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773202,
+    "temperature": 12.89,
+    "humidity": 72.44
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773203,
+    "temperature": 10.06,
+    "humidity": 44.17
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773204,
+    "temperature": 22.91,
+    "humidity": 59.84
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773205,
+    "temperature": 16.52,
+    "humidity": 61.82
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773206,
+    "temperature": 13.55,
+    "humidity": 54.64
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773207,
+    "temperature": 17.81,
+    "humidity": 49.61
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773208,
+    "temperature": 12.12,
+    "humidity": 46.59
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773209,
+    "temperature": 24.87,
+    "humidity": 57.81
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773210,
+    "temperature": 11.44,
+    "humidity": 63.09
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773211,
+    "temperature": 21.28,
+    "humidity": 67.27
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773212,
+    "temperature": 21.06,
+    "humidity": 58.72
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773213,
+    "temperature": 11.8,
+    "humidity": 76.28
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773214,
+    "temperature": 19.84,
+    "humidity": 40.01
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773215,
+    "temperature": 11.85,
+    "humidity": 68.44
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773216,
+    "temperature": 20.83,
+    "humidity": 48.52
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773217,
+    "temperature": 23.96,
+    "humidity": 79.44
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773218,
+    "temperature": 13.86,
+    "humidity": 66.51
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773219,
+    "temperature": 15.5,
+    "humidity": 43.93
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773220,
+    "temperature": 24.6,
+    "humidity": 68.25
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773221,
+    "temperature": 23.89,
+    "humidity": 78.14
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773222,
+    "temperature": 20.22,
+    "humidity": 55.61
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773223,
+    "temperature": 10.42,
+    "humidity": 53.55
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773224,
+    "temperature": 13.35,
+    "humidity": 42.64
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773225,
+    "temperature": 22.29,
+    "humidity": 76.7
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773226,
+    "temperature": 21.53,
+    "humidity": 48.11
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773227,
+    "temperature": 10.11,
+    "humidity": 73.32
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773228,
+    "temperature": 21.96,
+    "humidity": 43.24
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773229,
+    "temperature": 12.72,
+    "humidity": 57.25
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773230,
+    "temperature": 19.32,
+    "humidity": 42.53
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773231,
+    "temperature": 22.69,
+    "humidity": 54.08
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773232,
+    "temperature": 21.9,
+    "humidity": 64.32
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773233,
+    "temperature": 11.31,
+    "humidity": 74.09
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773234,
+    "temperature": 15.03,
+    "humidity": 60.94
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773235,
+    "temperature": 20.2,
+    "humidity": 65.92
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773236,
+    "temperature": 15.68,
+    "humidity": 77.31
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773237,
+    "temperature": 22.28,
+    "humidity": 67.84
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773238,
+    "temperature": 20.42,
+    "humidity": 53.35
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773239,
+    "temperature": 18.75,
+    "humidity": 55.44
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773240,
+    "temperature": 15.38,
+    "humidity": 61.85
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773241,
+    "temperature": 17.36,
+    "humidity": 50.23
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773242,
+    "temperature": 24.09,
+    "humidity": 45.4
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773243,
+    "temperature": 12.27,
+    "humidity": 52.7
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773244,
+    "temperature": 22.73,
+    "humidity": 78.82
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773245,
+    "temperature": 15.36,
+    "humidity": 56.34
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773246,
+    "temperature": 16.95,
+    "humidity": 66
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773247,
+    "temperature": 22.42,
+    "humidity": 75.11
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773248,
+    "temperature": 11.02,
+    "humidity": 66.66
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773249,
+    "temperature": 15.47,
+    "humidity": 70.24
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773250,
+    "temperature": 22.83,
+    "humidity": 54.23
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773251,
+    "temperature": 12.28,
+    "humidity": 60.23
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773252,
+    "temperature": 21.87,
+    "humidity": 57.55
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773253,
+    "temperature": 22.21,
+    "humidity": 44.73
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773254,
+    "temperature": 10.41,
+    "humidity": 49.22
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773255,
+    "temperature": 22.2,
+    "humidity": 62.8
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773256,
+    "temperature": 23.65,
+    "humidity": 58.76
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773257,
+    "temperature": 19.66,
+    "humidity": 54.69
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773258,
+    "temperature": 19.44,
+    "humidity": 76.13
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773259,
+    "temperature": 24.76,
+    "humidity": 51.08
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773260,
+    "temperature": 18.45,
+    "humidity": 65.82
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773261,
+    "temperature": 15,
+    "humidity": 79.26
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773262,
+    "temperature": 14.46,
+    "humidity": 49.05
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773263,
+    "temperature": 23.65,
+    "humidity": 66.21
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773264,
+    "temperature": 19.24,
+    "humidity": 75.11
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773265,
+    "temperature": 21.82,
+    "humidity": 74.17
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773266,
+    "temperature": 17.45,
+    "humidity": 49.88
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773267,
+    "temperature": 20.48,
+    "humidity": 69.03
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773268,
+    "temperature": 16.78,
+    "humidity": 63.95
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773269,
+    "temperature": 11.38,
+    "humidity": 75.92
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773270,
+    "temperature": 12.11,
+    "humidity": 48.92
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773271,
+    "temperature": 21.27,
+    "humidity": 69.22
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773272,
+    "temperature": 24.94,
+    "humidity": 41.25
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773273,
+    "temperature": 19.68,
+    "humidity": 74.94
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773274,
+    "temperature": 18.26,
+    "humidity": 56.95
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773275,
+    "temperature": 22.61,
+    "humidity": 69.22
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773276,
+    "temperature": 23.53,
+    "humidity": 71.82
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773277,
+    "temperature": 15.29,
+    "humidity": 40.27
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773278,
+    "temperature": 20.39,
+    "humidity": 74.72
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773279,
+    "temperature": 22.16,
+    "humidity": 49.29
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773280,
+    "temperature": 11.9,
+    "humidity": 62.12
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773281,
+    "temperature": 22.8,
+    "humidity": 75.61
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773282,
+    "temperature": 10.71,
+    "humidity": 46.27
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773283,
+    "temperature": 15.04,
+    "humidity": 45.71
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773284,
+    "temperature": 18,
+    "humidity": 40.85
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773285,
+    "temperature": 23.05,
+    "humidity": 42.28
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773286,
+    "temperature": 10.78,
+    "humidity": 71.44
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773287,
+    "temperature": 12.57,
+    "humidity": 70.85
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773288,
+    "temperature": 11.17,
+    "humidity": 71.26
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773289,
+    "temperature": 13.19,
+    "humidity": 70.92
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773290,
+    "temperature": 10.96,
+    "humidity": 57.32
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773291,
+    "temperature": 19.59,
+    "humidity": 71.71
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773292,
+    "temperature": 23.35,
+    "humidity": 50.98
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773293,
+    "temperature": 24.59,
+    "humidity": 58.47
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773294,
+    "temperature": 11.52,
+    "humidity": 71.34
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773295,
+    "temperature": 14.59,
+    "humidity": 44.04
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773296,
+    "temperature": 11.5,
+    "humidity": 73.52
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773297,
+    "temperature": 10.09,
+    "humidity": 56.12
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773298,
+    "temperature": 23.14,
+    "humidity": 62.66
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773299,
+    "temperature": 24.58,
+    "humidity": 68.53
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773300,
+    "temperature": 16.33,
+    "humidity": 56.97
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773301,
+    "temperature": 15.02,
+    "humidity": 62.51
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773302,
+    "temperature": 22.53,
+    "humidity": 53.12
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773303,
+    "temperature": 18.74,
+    "humidity": 44.41
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773304,
+    "temperature": 22.69,
+    "humidity": 59.32
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773305,
+    "temperature": 16.89,
+    "humidity": 76.24
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773306,
+    "temperature": 12.95,
+    "humidity": 64.04
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773307,
+    "temperature": 16.47,
+    "humidity": 56.66
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773308,
+    "temperature": 20.82,
+    "humidity": 55.89
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773309,
+    "temperature": 23.62,
+    "humidity": 56.3
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773310,
+    "temperature": 15.42,
+    "humidity": 77.9
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773311,
+    "temperature": 16.17,
+    "humidity": 44.15
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773312,
+    "temperature": 20.71,
+    "humidity": 79.98
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773313,
+    "temperature": 11.55,
+    "humidity": 55.01
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773314,
+    "temperature": 12.1,
+    "humidity": 75.99
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773315,
+    "temperature": 13.91,
+    "humidity": 78.72
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773316,
+    "temperature": 13.86,
+    "humidity": 65.74
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773317,
+    "temperature": 20.63,
+    "humidity": 67.9
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773318,
+    "temperature": 23.78,
+    "humidity": 70.32
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773319,
+    "temperature": 24.02,
+    "humidity": 74.94
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773320,
+    "temperature": 20.18,
+    "humidity": 43.82
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773321,
+    "temperature": 21.84,
+    "humidity": 70.01
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773322,
+    "temperature": 24.29,
+    "humidity": 56.15
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773323,
+    "temperature": 16.44,
+    "humidity": 58.94
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773324,
+    "temperature": 20.64,
+    "humidity": 71.76
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773325,
+    "temperature": 22.06,
+    "humidity": 52.67
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773326,
+    "temperature": 16.49,
+    "humidity": 52.66
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773327,
+    "temperature": 23.29,
+    "humidity": 72.81
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773328,
+    "temperature": 23.63,
+    "humidity": 69.71
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773329,
+    "temperature": 12.26,
+    "humidity": 57.43
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773330,
+    "temperature": 16.97,
+    "humidity": 50.18
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773331,
+    "temperature": 11.36,
+    "humidity": 61.27
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773332,
+    "temperature": 15.01,
+    "humidity": 71.46
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773333,
+    "temperature": 20.31,
+    "humidity": 54.83
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773334,
+    "temperature": 19.49,
+    "humidity": 66.18
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773335,
+    "temperature": 21.63,
+    "humidity": 52.72
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773336,
+    "temperature": 13.92,
+    "humidity": 48.76
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773337,
+    "temperature": 15.47,
+    "humidity": 56.02
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773338,
+    "temperature": 19.77,
+    "humidity": 67.4
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773339,
+    "temperature": 15.08,
+    "humidity": 71.27
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773340,
+    "temperature": 12.3,
+    "humidity": 44.64
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773341,
+    "temperature": 20.07,
+    "humidity": 47.29
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773342,
+    "temperature": 20.14,
+    "humidity": 47.27
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773343,
+    "temperature": 12.5,
+    "humidity": 66.78
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773344,
+    "temperature": 13.43,
+    "humidity": 42.84
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773345,
+    "temperature": 15.93,
+    "humidity": 48.9
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773346,
+    "temperature": 14.28,
+    "humidity": 47.2
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773347,
+    "temperature": 11.82,
+    "humidity": 61.29
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773348,
+    "temperature": 16.46,
+    "humidity": 40.37
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773349,
+    "temperature": 17.41,
+    "humidity": 44.44
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773350,
+    "temperature": 10.83,
+    "humidity": 57.46
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773351,
+    "temperature": 23.09,
+    "humidity": 79.2
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773352,
+    "temperature": 22.03,
+    "humidity": 74.93
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773353,
+    "temperature": 17.46,
+    "humidity": 40.41
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773354,
+    "temperature": 17.96,
+    "humidity": 61.81
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773355,
+    "temperature": 14.95,
+    "humidity": 49.98
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773356,
+    "temperature": 19.07,
+    "humidity": 41.71
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773357,
+    "temperature": 19.39,
+    "humidity": 75.39
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773358,
+    "temperature": 22.84,
+    "humidity": 77.32
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773359,
+    "temperature": 16.24,
+    "humidity": 53.68
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773360,
+    "temperature": 12.23,
+    "humidity": 75.93
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773361,
+    "temperature": 21.07,
+    "humidity": 72.27
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773362,
+    "temperature": 24.27,
+    "humidity": 69.55
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773363,
+    "temperature": 23.32,
+    "humidity": 55.64
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773364,
+    "temperature": 24.4,
+    "humidity": 65.88
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773365,
+    "temperature": 16.92,
+    "humidity": 64.51
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773366,
+    "temperature": 24.04,
+    "humidity": 71.41
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773367,
+    "temperature": 18.54,
+    "humidity": 42.27
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773368,
+    "temperature": 22.49,
+    "humidity": 47.34
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773369,
+    "temperature": 10.7,
+    "humidity": 44.25
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773370,
+    "temperature": 10.21,
+    "humidity": 50.15
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773371,
+    "temperature": 17.05,
+    "humidity": 76.54
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773372,
+    "temperature": 21.16,
+    "humidity": 67.95
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773373,
+    "temperature": 14.75,
+    "humidity": 50.34
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773374,
+    "temperature": 10.44,
+    "humidity": 45
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773375,
+    "temperature": 19.5,
+    "humidity": 51.29
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773376,
+    "temperature": 21.24,
+    "humidity": 78.12
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773377,
+    "temperature": 16.13,
+    "humidity": 75.15
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773378,
+    "temperature": 16.47,
+    "humidity": 40.97
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773379,
+    "temperature": 23.08,
+    "humidity": 70.14
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773380,
+    "temperature": 24.31,
+    "humidity": 52.9
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773381,
+    "temperature": 22.25,
+    "humidity": 46.87
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773382,
+    "temperature": 13.47,
+    "humidity": 68.07
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773383,
+    "temperature": 17.05,
+    "humidity": 71.93
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773384,
+    "temperature": 22.96,
+    "humidity": 54.69
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773385,
+    "temperature": 21.55,
+    "humidity": 79.23
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773386,
+    "temperature": 12.43,
+    "humidity": 51.68
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773387,
+    "temperature": 13.51,
+    "humidity": 56.12
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773388,
+    "temperature": 23.15,
+    "humidity": 62.99
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773389,
+    "temperature": 20.92,
+    "humidity": 73.38
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773390,
+    "temperature": 23.52,
+    "humidity": 57.07
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773391,
+    "temperature": 24.21,
+    "humidity": 48.83
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773392,
+    "temperature": 20.77,
+    "humidity": 44.15
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773393,
+    "temperature": 20.05,
+    "humidity": 55.42
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773394,
+    "temperature": 13.08,
+    "humidity": 42.15
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773395,
+    "temperature": 16.4,
+    "humidity": 55.32
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773396,
+    "temperature": 14.57,
+    "humidity": 40.41
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773397,
+    "temperature": 14.59,
+    "humidity": 73.31
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773398,
+    "temperature": 20.28,
+    "humidity": 50.59
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773399,
+    "temperature": 19.34,
+    "humidity": 47.69
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773400,
+    "temperature": 20.44,
+    "humidity": 49.36
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773401,
+    "temperature": 15,
+    "humidity": 48.52
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773402,
+    "temperature": 10.68,
+    "humidity": 65.06
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773403,
+    "temperature": 13.94,
+    "humidity": 79.86
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773404,
+    "temperature": 21.84,
+    "humidity": 46.53
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773405,
+    "temperature": 21.52,
+    "humidity": 55.33
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773406,
+    "temperature": 14.4,
+    "humidity": 65.15
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773407,
+    "temperature": 13.94,
+    "humidity": 55.25
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773408,
+    "temperature": 21.78,
+    "humidity": 67.4
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773409,
+    "temperature": 11.08,
+    "humidity": 71.42
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773410,
+    "temperature": 12.4,
+    "humidity": 45.69
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773411,
+    "temperature": 16.36,
+    "humidity": 73.59
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773412,
+    "temperature": 20.49,
+    "humidity": 48.53
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773413,
+    "temperature": 14.43,
+    "humidity": 52.59
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773414,
+    "temperature": 21.63,
+    "humidity": 46.82
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773415,
+    "temperature": 11.08,
+    "humidity": 48.72
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773416,
+    "temperature": 19.52,
+    "humidity": 42.55
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773417,
+    "temperature": 24.4,
+    "humidity": 60.77
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773418,
+    "temperature": 11,
+    "humidity": 74.96
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773419,
+    "temperature": 13.73,
+    "humidity": 53.83
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773420,
+    "temperature": 13.29,
+    "humidity": 49.04
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773421,
+    "temperature": 18,
+    "humidity": 79.74
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773422,
+    "temperature": 12.48,
+    "humidity": 66.05
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773423,
+    "temperature": 18.27,
+    "humidity": 53.77
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773424,
+    "temperature": 13.39,
+    "humidity": 57.66
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773425,
+    "temperature": 22.37,
+    "humidity": 50.3
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773426,
+    "temperature": 15.74,
+    "humidity": 64.08
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773427,
+    "temperature": 13.13,
+    "humidity": 73.71
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773428,
+    "temperature": 21.28,
+    "humidity": 63.37
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773429,
+    "temperature": 15.35,
+    "humidity": 40.74
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773430,
+    "temperature": 11.98,
+    "humidity": 59.26
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773431,
+    "temperature": 21.59,
+    "humidity": 64.84
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773432,
+    "temperature": 17.08,
+    "humidity": 69.71
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773433,
+    "temperature": 19.01,
+    "humidity": 75.18
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773434,
+    "temperature": 17.85,
+    "humidity": 68.19
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773435,
+    "temperature": 11.77,
+    "humidity": 44.47
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773436,
+    "temperature": 22.59,
+    "humidity": 71.87
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773437,
+    "temperature": 23.12,
+    "humidity": 72
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773438,
+    "temperature": 14.76,
+    "humidity": 59.04
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773439,
+    "temperature": 18.64,
+    "humidity": 78.01
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773440,
+    "temperature": 15.77,
+    "humidity": 46.11
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773441,
+    "temperature": 10.13,
+    "humidity": 71.36
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773442,
+    "temperature": 15.87,
+    "humidity": 68.22
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773443,
+    "temperature": 23.27,
+    "humidity": 51.64
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773444,
+    "temperature": 12.16,
+    "humidity": 78.04
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773445,
+    "temperature": 16.89,
+    "humidity": 52.83
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773446,
+    "temperature": 24.57,
+    "humidity": 46.03
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773447,
+    "temperature": 12.31,
+    "humidity": 56.21
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773448,
+    "temperature": 11.46,
+    "humidity": 45.89
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773449,
+    "temperature": 21.38,
+    "humidity": 41.93
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773450,
+    "temperature": 14.29,
+    "humidity": 49.19
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773451,
+    "temperature": 13.02,
+    "humidity": 46.67
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773452,
+    "temperature": 24.4,
+    "humidity": 65.53
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773453,
+    "temperature": 13.71,
+    "humidity": 42.24
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773454,
+    "temperature": 16.42,
+    "humidity": 70.85
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773455,
+    "temperature": 14.07,
+    "humidity": 45
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773456,
+    "temperature": 13.68,
+    "humidity": 40.98
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773457,
+    "temperature": 19.8,
+    "humidity": 57.78
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773458,
+    "temperature": 12.23,
+    "humidity": 52.48
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773459,
+    "temperature": 24.64,
+    "humidity": 42.84
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773460,
+    "temperature": 17.65,
+    "humidity": 63.05
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773461,
+    "temperature": 11.65,
+    "humidity": 60.02
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773462,
+    "temperature": 12.75,
+    "humidity": 44.34
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773463,
+    "temperature": 10.63,
+    "humidity": 56.65
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773464,
+    "temperature": 16.9,
+    "humidity": 54.08
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773465,
+    "temperature": 16.23,
+    "humidity": 72.32
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773466,
+    "temperature": 22.24,
+    "humidity": 53.04
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773467,
+    "temperature": 11.1,
+    "humidity": 48.02
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773468,
+    "temperature": 17.27,
+    "humidity": 41.21
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773469,
+    "temperature": 13,
+    "humidity": 54.01
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773470,
+    "temperature": 13.26,
+    "humidity": 79.46
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773471,
+    "temperature": 20.68,
+    "humidity": 49.63
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773472,
+    "temperature": 24.65,
+    "humidity": 48.46
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773473,
+    "temperature": 24.98,
+    "humidity": 65.93
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773474,
+    "temperature": 18.33,
+    "humidity": 78.04
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773475,
+    "temperature": 20.82,
+    "humidity": 41.98
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773476,
+    "temperature": 12.76,
+    "humidity": 55.92
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773477,
+    "temperature": 18.28,
+    "humidity": 42.04
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773478,
+    "temperature": 13.82,
+    "humidity": 49.77
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773479,
+    "temperature": 20.21,
+    "humidity": 74.38
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773480,
+    "temperature": 21.75,
+    "humidity": 60.84
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773481,
+    "temperature": 13.53,
+    "humidity": 56.45
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773482,
+    "temperature": 20.59,
+    "humidity": 60.25
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773483,
+    "temperature": 11.76,
+    "humidity": 47.52
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773484,
+    "temperature": 19.37,
+    "humidity": 54.36
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773485,
+    "temperature": 14.19,
+    "humidity": 70.74
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773486,
+    "temperature": 11.93,
+    "humidity": 55.08
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773487,
+    "temperature": 19.22,
+    "humidity": 43.46
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773488,
+    "temperature": 17.51,
+    "humidity": 74.04
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773489,
+    "temperature": 21.42,
+    "humidity": 71.58
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773490,
+    "temperature": 10.99,
+    "humidity": 79.77
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773491,
+    "temperature": 24.37,
+    "humidity": 43.77
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773492,
+    "temperature": 21.75,
+    "humidity": 52.7
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773493,
+    "temperature": 12.34,
+    "humidity": 40.5
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773494,
+    "temperature": 18.02,
+    "humidity": 57.18
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773495,
+    "temperature": 15.61,
+    "humidity": 54.55
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773496,
+    "temperature": 24.05,
+    "humidity": 74.48
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773497,
+    "temperature": 18.57,
+    "humidity": 43.88
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773498,
+    "temperature": 18.24,
+    "humidity": 67.24
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773499,
+    "temperature": 19.55,
+    "humidity": 65.29
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773500,
+    "temperature": 15.31,
+    "humidity": 62.12
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773501,
+    "temperature": 21.21,
+    "humidity": 75.48
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773502,
+    "temperature": 24.06,
+    "humidity": 79.93
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773503,
+    "temperature": 10.1,
+    "humidity": 56.32
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773504,
+    "temperature": 17.14,
+    "humidity": 40.9
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773505,
+    "temperature": 20.6,
+    "humidity": 74.99
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773506,
+    "temperature": 11.18,
+    "humidity": 56.02
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773507,
+    "temperature": 17.97,
+    "humidity": 64.37
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773508,
+    "temperature": 19.5,
+    "humidity": 68.77
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773509,
+    "temperature": 16.82,
+    "humidity": 58.36
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773510,
+    "temperature": 21.78,
+    "humidity": 56.27
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773511,
+    "temperature": 16.48,
+    "humidity": 61.31
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773512,
+    "temperature": 13.67,
+    "humidity": 61.08
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773513,
+    "temperature": 21.57,
+    "humidity": 64.82
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773514,
+    "temperature": 12.37,
+    "humidity": 70.52
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773515,
+    "temperature": 18.39,
+    "humidity": 68.66
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773516,
+    "temperature": 11.79,
+    "humidity": 71.66
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773517,
+    "temperature": 23.67,
+    "humidity": 71.83
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773518,
+    "temperature": 16.62,
+    "humidity": 49.93
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773519,
+    "temperature": 23.65,
+    "humidity": 44.19
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773520,
+    "temperature": 16,
+    "humidity": 40.57
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773521,
+    "temperature": 19.73,
+    "humidity": 69.74
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773522,
+    "temperature": 22.86,
+    "humidity": 64.71
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773523,
+    "temperature": 22.92,
+    "humidity": 54.31
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773524,
+    "temperature": 18,
+    "humidity": 77.52
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773525,
+    "temperature": 20.66,
+    "humidity": 63.56
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773526,
+    "temperature": 16.56,
+    "humidity": 49.92
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773527,
+    "temperature": 11.45,
+    "humidity": 78.83
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773528,
+    "temperature": 13.51,
+    "humidity": 59.12
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773529,
+    "temperature": 15.84,
+    "humidity": 51.71
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773530,
+    "temperature": 20.92,
+    "humidity": 64.71
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773531,
+    "temperature": 21.76,
+    "humidity": 61.94
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773532,
+    "temperature": 13.42,
+    "humidity": 73.67
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773533,
+    "temperature": 12.33,
+    "humidity": 49.52
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773534,
+    "temperature": 11.44,
+    "humidity": 42.14
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773535,
+    "temperature": 18.23,
+    "humidity": 51.34
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773536,
+    "temperature": 14.85,
+    "humidity": 49.98
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773537,
+    "temperature": 19.37,
+    "humidity": 71.32
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773538,
+    "temperature": 20.77,
+    "humidity": 63.2
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773539,
+    "temperature": 19.94,
+    "humidity": 74.38
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773540,
+    "temperature": 23.64,
+    "humidity": 52.03
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773541,
+    "temperature": 14.21,
+    "humidity": 66.98
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773542,
+    "temperature": 18.74,
+    "humidity": 76.72
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773543,
+    "temperature": 22.21,
+    "humidity": 69.41
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773544,
+    "temperature": 23.53,
+    "humidity": 43.63
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773545,
+    "temperature": 18.24,
+    "humidity": 42.43
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773546,
+    "temperature": 12.39,
+    "humidity": 75.58
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773547,
+    "temperature": 17.4,
+    "humidity": 73.52
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773548,
+    "temperature": 17.2,
+    "humidity": 40.47
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773549,
+    "temperature": 23.46,
+    "humidity": 79.67
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773550,
+    "temperature": 13.36,
+    "humidity": 71.73
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773551,
+    "temperature": 12.53,
+    "humidity": 43.06
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773552,
+    "temperature": 14.58,
+    "humidity": 59.21
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773553,
+    "temperature": 24.65,
+    "humidity": 50.86
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773554,
+    "temperature": 23.63,
+    "humidity": 59.71
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773555,
+    "temperature": 16.04,
+    "humidity": 61.18
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773556,
+    "temperature": 11.15,
+    "humidity": 65.56
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773557,
+    "temperature": 23.64,
+    "humidity": 68.68
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773558,
+    "temperature": 11,
+    "humidity": 59.43
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773559,
+    "temperature": 13.2,
+    "humidity": 73.22
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773560,
+    "temperature": 22.12,
+    "humidity": 65.45
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773561,
+    "temperature": 15.02,
+    "humidity": 58.84
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773562,
+    "temperature": 15.96,
+    "humidity": 42.74
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773563,
+    "temperature": 23.07,
+    "humidity": 69.77
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773564,
+    "temperature": 16.43,
+    "humidity": 67.03
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773565,
+    "temperature": 15.79,
+    "humidity": 62.18
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773566,
+    "temperature": 11.93,
+    "humidity": 55.06
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773567,
+    "temperature": 21.95,
+    "humidity": 79.62
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773568,
+    "temperature": 16.16,
+    "humidity": 64.51
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773569,
+    "temperature": 23.96,
+    "humidity": 60.72
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773570,
+    "temperature": 20.31,
+    "humidity": 52.58
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773571,
+    "temperature": 22.82,
+    "humidity": 40.34
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773572,
+    "temperature": 13.46,
+    "humidity": 79.1
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773573,
+    "temperature": 19,
+    "humidity": 75.23
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773574,
+    "temperature": 12.86,
+    "humidity": 71.61
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773575,
+    "temperature": 23.47,
+    "humidity": 42.42
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773576,
+    "temperature": 13.73,
+    "humidity": 70.53
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773577,
+    "temperature": 21.26,
+    "humidity": 55.1
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773578,
+    "temperature": 10.28,
+    "humidity": 66.82
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773579,
+    "temperature": 11.19,
+    "humidity": 56.99
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773580,
+    "temperature": 23.05,
+    "humidity": 44.36
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773581,
+    "temperature": 13.27,
+    "humidity": 78.24
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773582,
+    "temperature": 20.64,
+    "humidity": 77.29
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773583,
+    "temperature": 18.13,
+    "humidity": 75.95
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773584,
+    "temperature": 17.63,
+    "humidity": 72.26
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773585,
+    "temperature": 20.42,
+    "humidity": 47.47
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773586,
+    "temperature": 18.47,
+    "humidity": 59.2
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773587,
+    "temperature": 14.87,
+    "humidity": 68.67
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773588,
+    "temperature": 14.52,
+    "humidity": 48.64
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773589,
+    "temperature": 15.32,
+    "humidity": 67.5
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773590,
+    "temperature": 18.21,
+    "humidity": 52.05
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773591,
+    "temperature": 20.01,
+    "humidity": 41.26
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773592,
+    "temperature": 15.37,
+    "humidity": 47.81
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773593,
+    "temperature": 17.56,
+    "humidity": 40.12
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773594,
+    "temperature": 19.88,
+    "humidity": 61.19
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773595,
+    "temperature": 15.84,
+    "humidity": 78.86
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773596,
+    "temperature": 14.8,
+    "humidity": 52.47
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773597,
+    "temperature": 18.03,
+    "humidity": 47.71
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773598,
+    "temperature": 22.84,
+    "humidity": 61.9
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773599,
+    "temperature": 10.17,
+    "humidity": 46.69
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773600,
+    "temperature": 23.7,
+    "humidity": 66.04
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773601,
+    "temperature": 23.39,
+    "humidity": 52.45
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773602,
+    "temperature": 17.52,
+    "humidity": 57.86
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773603,
+    "temperature": 11.62,
+    "humidity": 51.65
+  },
+  {
+    "deviceId": "simulated-station-5",
+    "timestamp": 1748773604,
+    "temperature": 21.72,
+    "humidity": 69.88
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773605,
+    "temperature": 15.11,
+    "humidity": 55.95
+  },
+  {
+    "deviceId": "simulated-station-4",
+    "timestamp": 1748773606,
+    "temperature": 19.59,
+    "humidity": 46.54
+  },
+  {
+    "deviceId": "simulated-station-2",
+    "timestamp": 1748773607,
+    "temperature": 23.24,
+    "humidity": 73.07
+  },
+  {
+    "deviceId": "simulated-station-3",
+    "timestamp": 1748773608,
+    "temperature": 18.67,
+    "humidity": 48.75
+  },
+  {
+    "deviceId": "simulated-station-1",
+    "timestamp": 1748773609,
+    "temperature": 23.36,
+    "humidity": 69.01
+  }
+]
