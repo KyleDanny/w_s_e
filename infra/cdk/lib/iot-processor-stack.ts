@@ -24,7 +24,7 @@ export class IotProcessorStack extends Stack {
       removalPolicy: RemovalPolicy.DESTROY,
     });
 
-    // Create the lambda decoder function
+    // Create the lambda weather decoder function
     const weatherLambda = new lambda.Function(this, "WeatherDecoderLambda", {
       runtime: lambda.Runtime.NODEJS_18_X,
       handler: "index.handler", // matches dist/index.js export
@@ -40,7 +40,7 @@ export class IotProcessorStack extends Stack {
 
     table.grantWriteData(weatherLambda);
 
-    // Create the API lambda function for the API
+    // Create the API lambda function (WeatherApiLambda)
     const apiLambda = new lambda.Function(this, "WeatherApiLambda", {
       runtime: lambda.Runtime.NODEJS_18_X,
       handler: "index.handler",

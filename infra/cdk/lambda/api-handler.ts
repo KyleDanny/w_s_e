@@ -7,6 +7,8 @@ import {
 const db = new DynamoDBClient({});
 
 export const handler = async (event: any) => {
+  console.log("🚀 Incoming event:", JSON.stringify(event));
+
   let deviceId: string | undefined;
 
   try {
@@ -77,9 +79,11 @@ export const handler = async (event: any) => {
       body: JSON.stringify({ error: "Method not allowed" }),
     };
   } catch (err: any) {
+    console.error("❌ Error in API handler:", err);
+
     return {
       statusCode: 400,
-      body: JSON.stringify({ error: err.message }),
+      body: JSON.stringify({ error: err.message || "Unknown error" }),
     };
   }
 };

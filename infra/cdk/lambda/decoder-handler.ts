@@ -3,7 +3,7 @@ import { decodeWeatherData } from "./decode.js";
 
 const db = new DynamoDBClient({});
 
-export const decoderHandler = async (event: any) => {
+export const handler = async (event: any) => {
   try {
     const binaryData = Buffer.from(event.body, "base64");
     const weather = decodeWeatherData(new Uint8Array(binaryData));
