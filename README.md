@@ -6,8 +6,8 @@ This project simulates live binary-encoded weather data from multiple IoT weathe
 
 ## 🛠 Tech Stack
 
-- **Simulator**: Node.js (Bun), binary encoding/decoding, seeded payloads
-- **Backend**: AWS CDK (TypeScript), Lambda, API Gateway (HTTP API v2), DynamoDB
+- **Simulator**: Node.js (Bun), binary encoding, seeded payloads
+- **Backend**: AWS CDK (TypeScript), Lambda, decoding, API Gateway (HTTP API v2), DynamoDB
 - **Frontend**: React + TypeScript (Vite) with TailwindCSS, Recharts
 
 ## 📦 Project Structure
@@ -16,7 +16,7 @@ This project simulates live binary-encoded weather data from multiple IoT weathe
 .
 ├── diagram                 # Visual idea of how the wind farm functions
 ├── infra/cdk/              # AWS infrastructure (CDK)
-  ├──> infra/cdk/lambda/    # Weather + API handlers
+  ├──> infra/cdk/lambda/    # Weather decoding + API handlers
 ├── sensor-simulator/       # Simulated binary data + streamer
 ├── weather-frontend/       # React app (Vite)
 ```
