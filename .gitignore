@@ -1,8 +1,8 @@
 # Ignore lambda node_modules
 infra/lambda/node_modules/
 infra/lambda/env/
-infra/cdk/lambda/dist
-infra/cdk/lambda/api-dist
+infra/cdk/lambda/decoder-handler-dist
+infra/cdk/lambda/api-handler-dist
 infra/.DS_Store
 
 # Ignore sensor-simulator node_modules

@@ -24,11 +24,13 @@ export class IotProcessorStack extends Stack {
       removalPolicy: RemovalPolicy.DESTROY,
     });
 
-    // Create the lambda function
+    // Create the lambda decoder function
     const weatherLambda = new lambda.Function(this, "WeatherDecoderLambda", {
       runtime: lambda.Runtime.NODEJS_18_X,
       handler: "index.handler", // matches dist/index.js export
-      code: lambda.Code.fromAsset(path.join(__dirname, "../lambda/dist")),
+      code: lambda.Code.fromAsset(
+        path.join(__dirname, "../lambda/decoder-handler-dist")
+      ),
       memorySize: 256,
       timeout: Duration.seconds(5),
       environment: {
@@ -38,11 +40,13 @@ export class IotProcessorStack extends Stack {
 
     table.grantWriteData(weatherLambda);
 
-    // Create the API lambda function
+    // Create the API lambda function for the API
     const apiLambda = new lambda.Function(this, "WeatherApiLambda", {
       runtime: lambda.Runtime.NODEJS_18_X,
       handler: "index.handler",
-      code: lambda.Code.fromAsset(path.join(__dirname, "../lambda/api-dist")),
+      code: lambda.Code.fromAsset(
+        path.join(__dirname, "../lambda/api-handler-dist")
+      ),
       memorySize: 256,
       timeout: Duration.seconds(5),
       environment: {
@@ -63,10 +67,7 @@ export class IotProcessorStack extends Stack {
 
     httpApi.addRoutes({
       path: "/weather",
-      methods: [
-        apigateway.HttpMethod.GET,
-        apigateway.HttpMethod.POST, // <-- add this
-      ],
+      methods: [apigateway.HttpMethod.GET, apigateway.HttpMethod.POST],
       integration: new integrations.HttpLambdaIntegration(
         "WeatherApiIntegration",
         apiLambda

@@ -61,8 +61,8 @@ bun run simulator.ts --mode=live
 
 ```bash
 cd infra/cdk
-bun run build-api-handler       # Bundle the API handler
 bun run build-decoder-handler   # Bundle the decoder handler
+bun run build-api-handler       # Bundle the API handler
 npx cdk deploy
 ```
 
