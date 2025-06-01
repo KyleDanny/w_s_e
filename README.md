@@ -25,10 +25,13 @@ This project simulates an end-to-end IoT pipeline: weather stations generate bin
 
 ## 📦 Project Structure
 
-├── frontend/ # React app (Vite)
-├── sensor-simulator/ # Simulated binary data + streamer
-├── infra/cdk/ # AWS infrastructure (CDK)
-├── lambda/ # Weather + API handlers
+```
+.
+├── frontend/                # React app (Vite)
+├── sensor-simulator/       # Simulated binary data + streamer
+├── infra/cdk/              # AWS infrastructure (CDK)
+├── lambda/                 # Weather + API handlers
+```
 
 ---
 
@@ -38,69 +41,116 @@ Generate binary payloads:
 
 ```bash
 bun run generate-seeded-data
-bun run simulator.ts (Simulate sending data locally - console only)
-bun run simulator.ts --mode=live (Simulate sending data to live API / AWS)
+```
+
+Simulate sending data locally (console only):
+
+```bash
+bun run simulator.ts
+```
+
+Simulate sending data to live API:
+
+```bash
+bun run simulator.ts --mode=live
+```
 
 ---
 
-## 🚀 Deploying to AWS
+## 🌍 Deploying to AWS
 
+```bash
 cd infra/cdk
 bun run build-api-handler       # Bundle the API handler
 bun run build-decoder-handler   # Bundle the decoder handler
 npx cdk deploy
+```
+
+---
 
 ## 🚩 Key Challenges & Solutions
 
-❌ cdk init failed in non-empty directory
-Solution: Moved CDK files to a dedicated subdirectory (infra/cdk).
+### ❌ `cdk init` failed in non-empty directory
 
-⚠️ Multiple lock files found during cdk bootstrap
-Cause: Both bun.lockb and package-lock.json existed.
-Solution: Set depsLockFilePath explicitly or remove the unused lock file.
+**Solution**: Moved CDK files to a dedicated subdirectory (`infra/cdk`).
 
-❌ Docker build failed: invalid reference format
-Solution: Corrected bundling image command and ensured proper quoting around file paths.
+---
 
-❌ Tailwind not working in frontend
-Cause: Misconfigured PostCSS or missing directives.
-Solution: Followed Tailwind Vite setup precisely, ensured @tailwind base/components/utilities were imported.
+### ⚠️ `Multiple lock files found` during `cdk bootstrap`
 
-❌ Lambda POST API returning 404 or missing deviceId
-Cause: Only GET was configured in API Gateway.
-Solution: Added support for POST route, updated Lambda handler to parse JSON body.
+**Cause**: Both `bun.lockb` and `package-lock.json` existed.  
+**Solution**: Set `depsLockFilePath` explicitly or remove the unused lock file.
 
-❌ DynamoDB PutItem permission denied
-Solution: Added table.grantWriteData() to the POST Lambda in the CDK stack.
+---
 
-📈 Chart layout not side-by-side
-Solution: Used Tailwind grid layout (grid-cols-1 md:grid-cols-2) and tweaked responsiveness.
+### ❌ Docker build failed: `invalid reference format`
 
-🧪 Binary simulator lacked deviceId
-Solution: Updated API payload and seeded data generator to include deviceId.
+**Solution**: Corrected bundling image command and ensured proper quoting around file paths.
+
+---
+
+### ❌ Tailwind not working in frontend
+
+**Cause**: Misconfigured PostCSS or missing directives.  
+**Solution**: Followed [Tailwind Vite setup](https://tailwindcss.com/docs/installation/using-vite) precisely, ensured `@tailwind base/components/utilities` were imported.
+
+---
+
+### ❌ Lambda POST API returning 404 or missing `deviceId`
+
+**Cause**: Only GET was configured in API Gateway.  
+**Solution**: Added support for POST route, updated Lambda handler to parse JSON body.
+
+---
+
+### ❌ DynamoDB PutItem permission denied
+
+**Solution**: Added `table.grantWriteData()` to the POST Lambda in the CDK stack.
+
+---
+
+### 📈 Chart layout not side-by-side
+
+**Solution**: Used Tailwind grid layout (`grid-cols-1 md:grid-cols-2`) and tweaked responsiveness.
+
+---
+
+### 🧪 Binary simulator lacked `deviceId`
+
+**Solution**: Updated API payload and seeded data generator to include `deviceId`.
+
+---
 
 ## 📊 Example API
 
+**GET:**
+
+```
 GET /weather?deviceId=simulated-station-1
-POST
+```
+
+**POST:**
+
+```json
 {
   "deviceId": "simulated-station-1",
   "timestamp": 1717092075,
   "temperature": 22.1,
   "humidity": 55.2
 }
+```
+
+---
 
 ## 🧠 Final Notes
 
-The system simulates real-world IoT latency, encoding, and ingestion.
+- The system simulates real-world IoT latency, encoding, and ingestion.
+- Focus was placed on optimizing developer experience, clear data flow, and realistic frontend behavior.
+- Seeded binary data was used to mimic 1-year device logs.
 
-Focus was placed on optimizing developer experience, clear data flow, and realistic frontend behavior.
+---
 
-Seeded binary data was used to mimic 1-year device logs.
+## 👨‍💻 Author
 
-Additional simulation realism (noise, out-of-order data) can be toggled for testing edge cases.
-
-👨‍💻 Author
-Kyle Danny
+Kyle Danny  
 Weather Station Simulation Project — 2025
-```
