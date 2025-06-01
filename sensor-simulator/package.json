@@ -6,7 +6,10 @@
   "type": "module",
   "scripts": {
     "test": "jest",
-    "start": "node simulate.ts"
+    "single-run": "bun simulate.ts",
+    "generate-seeded-data": "bun generate-seeded-data.ts",
+    "simulate:local": "bun simulator.ts",
+    "simulate:live": "bun simulator.ts --mode=live"
   },
   "keywords": [],
   "author": "",
@@ -14,9 +17,12 @@
   "devDependencies": {
     "@types/jest": "^29.5.14",
     "@types/mocha": "^10.0.10",
+    "@types/node": "^22.15.27",
     "jest": "^29.7.0"
   },
   "dependencies": {
-    "@jest/globals": "^30.0.0-beta.3"
+    "@jest/globals": "^30.0.0-beta.3",
+    "axios": "^1.9.0",
+    "dotenv": "^16.5.0"
   }
 }

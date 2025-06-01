@@ -2,6 +2,8 @@ import fs from "fs";
 import path from "path";
 import { encodeWeatherData } from "./encode";
 
+// testing encoding logic, one-off payload generation.
+
 /**
  * Generates a single simulated data point
  */
