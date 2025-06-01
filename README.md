@@ -1,6 +1,6 @@
 # 🌦️ Weather Station Simulation — IoT to Web Dashboard
 
-This project simulates an end-to-end IoT pipeline: weather stations generate binary-encoded data and send it to an AWS backend via HTTP (or optionally MQTT). The data is visualized on a live-updating React dashboard.
+This project simulates live binary-encoded weather data from multiple IoT weather stations and sends it to an AWS API. The API decodes the payload and stores the data in DynamoDB. It’s built for edge simulation and serverless cloud ingestion.
 
 ---
 
@@ -10,16 +10,32 @@ This project simulates an end-to-end IoT pipeline: weather stations generate bin
 - **Backend**: AWS CDK (TypeScript), Lambda, API Gateway (HTTP API v2), DynamoDB
 - **Simulator**: Node.js (Bun), binary encoding/decoding, seeded payloads
 
+## 🧱 Backend Infra/CDK Project Structure
+
+- `simulator.ts` — Sends data as binary payloads (live or local mode)
+- `encode.ts / decode.ts` — Encode and decode weather data (binary format)
+- `decoder-handler.ts` — Lambda function to process binary payloads
+- `api-handler.ts` — Lambda to expose GET endpoint for frontend
+- `iot-processor-stack.ts` — CDK stack to provision API Gateway, Lambdas, and DynamoDB
+- `simulated_payloads.json` — List of weather readings for simulation
+
 ---
 
 ## 🔧 Features
 
-- 📈 Live-updating weather dashboard for temperature & humidity
-- ⏱ Toggleable auto-polling of data every second
-- 🌡 Unit toggle: °C ↔ °F
-- 🧭 Filter by device (up to 5 simulated devices)
-- 📥 Export table to CSV
-- 🧪 Simulation system generates realistic sensor readings
+- Sends real-time weather sensor data (temperature, humidity, timestamp) from a simulator via POST
+- Encoded as `Uint8Array` using custom binary protocol
+
+- Decoded and persisted via Lambda to DynamoDB
+- Fully deployable with AWS CDK
+
+- Frontend-friendly `GET /weather?deviceId=...` endpoint
+- Live-updating weather dashboard for temperature & humidity
+- Toggleable auto-polling of data every second
+- Unit toggle: °C ↔ °F
+- Filter by device (up to 5 simulated devices)
+- Export table to CSV
+- Simulation system generates realistic sensor readings
 
 ---
 
@@ -27,65 +43,79 @@ This project simulates an end-to-end IoT pipeline: weather stations generate bin
 
 ```
 .
-├── frontend/                # React app (Vite)
+├── frontend/               # React app (Vite)
 ├── sensor-simulator/       # Simulated binary data + streamer
 ├── infra/cdk/              # AWS infrastructure (CDK)
-├── lambda/                 # Weather + API handlers
+├── infra/cdk/lambda/       # Weather + API handlers
+├── diagram                 # Visual idea of how the wind farm functions
 ```
 
 ---
 
 ## 🧪 Running the Simulation
 
-Generate binary payloads:
+Generate binary payloads from /sensor-simlator:
 
 ```bash
+cd sensor-simulator
+bun install
 bun run generate-seeded-data
-```
-
-Simulate sending data locally (console only):
-
-```bash
-bun run simulator.ts
-```
-
-Simulate sending data to live API:
-
-```bash
-bun run simulator.ts --mode=live
+bun run simulate:local    # Simulate sending data locally (console only)
+bun run simulate:live     # Simulate sending data to live API (first run: /infra/cdk):
 ```
 
 ---
 
-## 🌍 Deploying to AWS
+## 🌍 Deploying stack to AWS and DynamoDB config
 
 ```bash
 cd infra/cdk
+bun install
 bun run build-decoder-handler   # Bundle the decoder handler
 bun run build-api-handler       # Bundle the API handler
-npx cdk deploy
+npx cdk deploy                  # OR Bundle both of the above, and deploy
 ```
 
 ---
 
 ## 🚩 Key Challenges & Solutions
 
-### ❌ `cdk init` failed in non-empty directory
-
-**Solution**: Moved CDK files to a dedicated subdirectory (`infra/cdk`).
-
----
-
 ### ⚠️ `Multiple lock files found` during `cdk bootstrap`
 
 **Cause**: Both `bun.lockb` and `package-lock.json` existed.  
-**Solution**: Set `depsLockFilePath` explicitly or remove the unused lock file.
+**Solution**: Migrated over to bunlock files.
+
+---
+
+### ❌ `deviceId` empty in DynamoDB / decoder Lambda
+
+- **Cause:** `Uint8Array` sent directly via Axios was misinterpreted by API Gateway
+- **Fix:** Used `Buffer.from(...).toString('base64')` and enabled `isBase64Encoded` in the Lambda
+
+---
+
+### ❌ Lambda returns `Invalid binary payload length: 28`
+
+- **Cause:** Mismatched encoding between `simulator.ts` and `simulate.ts`
+- **Fix:** Ensured both encode with `encodeWeatherData` and decode 28-byte buffers (timestamp, temp, humidity, deviceId)
+
+---
+
+### ❌ 404 / 400 / 500 Errors from API Gateway
+
+- **Cause:** Route not matching due to missing headers or incorrect handler config
+- **Fixes:**
+  - Set `x-device-id` header in simulator
+  - Used correct handler names (`index.handler`)
+  - Corrected `content-type` to `application/octet-stream`
+  - Deployed updated CDK stack with binary media type support
+  - Updated API payload and seeded data generator to include `deviceId`
 
 ---
 
 ### ❌ Docker build failed: `invalid reference format`
 
-**Solution**: Corrected bundling image command and ensured proper quoting around file paths.
+**Solution**: Moved away from default use of docker, and use esbuild instead to create dist builds that could be used instead.
 
 ---
 
@@ -109,18 +139,6 @@ npx cdk deploy
 
 ---
 
-### 📈 Chart layout not side-by-side
-
-**Solution**: Used Tailwind grid layout (`grid-cols-1 md:grid-cols-2`) and tweaked responsiveness.
-
----
-
-### 🧪 Binary simulator lacked `deviceId`
-
-**Solution**: Updated API payload and seeded data generator to include `deviceId`.
-
----
-
 ## 📊 Example API
 
 **GET:**
@@ -130,6 +148,10 @@ GET /weather?deviceId=simulated-station-1
 ```
 
 **POST:**
+
+```
+POST /upload
+```
 
 ```json
 {
@@ -145,8 +167,20 @@ GET /weather?deviceId=simulated-station-1
 ## 🧠 Final Notes
 
 - The system simulates real-world IoT latency, encoding, and ingestion.
+- Payload format = 4 bytes timestamp + 2 bytes temp + 2 bytes humidity + 20 bytes deviceId
 - Focus was placed on optimizing developer experience, clear data flow, and realistic frontend behavior.
-- Seeded binary data was used to mimic 1-year device logs.
+- Binary data is base64-encoded for API Gateway compatibility
+- DynamoDB uses deviceId as partition key and timestamp as sort key
+
+## 📦 Payload Format
+
+timestamp: 4 bytes (Uint32)
+
+temperature: 2 bytes (Int16, multiplied by 100)
+
+humidity: 2 bytes (Uint16, multiplied by 100)
+
+deviceId: 20 bytes, encoded using TextEncoder and padded/truncated to fixed length
 
 ---
 

@@ -11,6 +11,7 @@ function generateFakeReading() {
   const humidity = (Math.random() * 40 + 40).toFixed(2); // 40–80% RH
 
   return {
+    deviceId: "simulated-station-1",
     timestamp,
     temperature: parseFloat(temperature),
     humidity: parseFloat(humidity),

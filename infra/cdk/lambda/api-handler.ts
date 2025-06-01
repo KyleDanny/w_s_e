@@ -19,7 +19,7 @@ export const handler = async (event: any) => {
     if (isPost) {
       const body =
         typeof event.body === "string" ? JSON.parse(event.body) : event.body;
-      deviceId = body.deviceId;
+      deviceId = event.queryStringParameters?.deviceId;
 
       if (!deviceId) throw new Error("Missing deviceId");
 

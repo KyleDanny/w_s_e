@@ -25,20 +25,24 @@ export class IotProcessorStack extends Stack {
     });
 
     // Create the lambda weather decoder function
-    const weatherLambda = new lambda.Function(this, "WeatherDecoderLambda", {
-      runtime: lambda.Runtime.NODEJS_18_X,
-      handler: "index.handler", // matches dist/index.js export
-      code: lambda.Code.fromAsset(
-        path.join(__dirname, "../lambda/decoder-handler-dist")
-      ),
-      memorySize: 256,
-      timeout: Duration.seconds(5),
-      environment: {
-        TABLE_NAME: table.tableName,
-      },
-    });
+    const WeatherDecoderLambda = new lambda.Function(
+      this,
+      "WeatherDecoderLambda",
+      {
+        runtime: lambda.Runtime.NODEJS_18_X,
+        handler: "index.handler", // matches dist/index.js export
+        code: lambda.Code.fromAsset(
+          path.join(__dirname, "../lambda/decoder-handler-dist")
+        ),
+        memorySize: 256,
+        timeout: Duration.seconds(5),
+        environment: {
+          TABLE_NAME: table.tableName,
+        },
+      }
+    );
 
-    table.grantWriteData(weatherLambda);
+    table.grantWriteData(WeatherDecoderLambda);
 
     // Create the API lambda function (WeatherApiLambda)
     const apiLambda = new lambda.Function(this, "WeatherApiLambda", {
@@ -60,17 +64,36 @@ export class IotProcessorStack extends Stack {
     const httpApi = new apigateway.HttpApi(this, "WeatherHttpApi", {
       corsPreflight: {
         allowHeaders: ["*"],
-        allowMethods: [apigateway.CorsHttpMethod.GET],
-        allowOrigins: ["*"], // For dev — restrict in prod
+        allowMethods: [
+          apigateway.CorsHttpMethod.GET,
+          apigateway.CorsHttpMethod.POST,
+        ],
+        allowOrigins: ["*"],
       },
+      // defaultIntegration: new integrations.HttpLambdaIntegration(
+      //   "WeatherIntegration",
+      //   WeatherDecoderLambda
+      // ),
     });
 
+    // Enable binary media types (only fully supported on REST API, may not work on HttpApi as expected)
+    (httpApi as any).addBinaryMediaType?.("application/octet-stream");
+
     httpApi.addRoutes({
-      path: "/weather",
-      methods: [apigateway.HttpMethod.GET, apigateway.HttpMethod.POST],
+      path: "/weather", // frontend reads from here
+      methods: [apigateway.HttpMethod.GET],
       integration: new integrations.HttpLambdaIntegration(
         "WeatherApiIntegration",
         apiLambda
+      ),
+    });
+
+    httpApi.addRoutes({
+      path: "/upload", // simulator writes binary here
+      methods: [apigateway.HttpMethod.POST],
+      integration: new integrations.HttpLambdaIntegration(
+        "WeatherDecoderIntegration",
+        WeatherDecoderLambda
       ),
     });
 

@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import axios from "axios";
+import { encodeWeatherData } from "./encode";
 
 const args = process.argv.slice(2);
 const mode = args.includes("--mode=live") ? "live" : "local";
@@ -26,9 +27,15 @@ const interval = setInterval(async () => {
   const payload = payloads[index];
 
   if (mode === "live") {
+    const encoded = encodeWeatherData(payload); // returns Uint8Array
+
     try {
-      await axios.post(process.env.API_URL, payload);
-      console.log(`✅ Sent to API: ${JSON.stringify(payload)}`);
+      await axios.post(`${process.env.API_URL}/upload`, encoded, {
+        headers: {
+          "Content-Type": "application/octet-stream",
+        },
+      });
+      console.log(`✅ Sent to API: ${JSON.stringify(encoded)}`);
     } catch (error) {
       console.error("❌ API Error:", (error as any).message);
     }
