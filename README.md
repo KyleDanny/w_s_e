@@ -43,14 +43,14 @@ This project simulates live binary-encoded weather data from multiple IoT weathe
 
 ## 🔧 Features
 
-- Sends real-time weather sensor data (temperature, humidity, timestamp) from a simulator via POST
+- Sends 'real-time' weather sensor data (temperature, humidity, timestamp) from a simulator via POST
 - Encoded as `Uint8Array` using custom binary protocol
 
 - Decoded and persisted via Lambda to DynamoDB
 - Fully deployable with AWS CDK
 
 - Frontend-friendly `GET /weather?deviceId=...` endpoint
-- Live-updating weather dashboard for temperature & humidity
+- 'Live-updating' weather dashboard for temperature & humidity
 - Toggleable auto-polling of data every second
 - Unit toggle: °C ↔ °F
 - Filter by device (up to 5 simulated devices)
@@ -59,7 +59,7 @@ This project simulates live binary-encoded weather data from multiple IoT weathe
 
 ---
 
-## 🌱 Running the Simulation
+## 🌱 Seeding & running the Simulator
 
 Generate binary payloads from /sensor-simlator:
 
