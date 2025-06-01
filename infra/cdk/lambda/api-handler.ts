@@ -1,6 +1,6 @@
 import {
   DynamoDBClient,
-  PutItemCommand,
+  // PutItemCommand,
   QueryCommand,
 } from "@aws-sdk/client-dynamodb";
 
@@ -13,35 +13,35 @@ export const handler = async (event: any) => {
 
   try {
     const method = event.requestContext?.http?.method;
-    const isPost = method === "POST";
+    // const isPost = method === "POST";
     const isGet = method === "GET";
 
-    if (isPost) {
-      const body =
-        typeof event.body === "string" ? JSON.parse(event.body) : event.body;
-      deviceId = event.queryStringParameters?.deviceId;
+    // if (isPost) {
+    //   const body =
+    //     typeof event.body === "string" ? JSON.parse(event.body) : event.body;
+    //   deviceId = event.queryStringParameters?.deviceId;
 
-      if (!deviceId) throw new Error("Missing deviceId");
+    //   if (!deviceId) throw new Error("Missing deviceId");
 
-      const { timestamp, temperature, humidity } = body;
+    //   const { timestamp, temperature, humidity } = body;
 
-      await db.send(
-        new PutItemCommand({
-          TableName: process.env.TABLE_NAME!,
-          Item: {
-            deviceId: { S: deviceId },
-            timestamp: { N: timestamp.toString() },
-            temperature: { N: temperature.toString() },
-            humidity: { N: humidity.toString() },
-          },
-        })
-      );
+    //   await db.send(
+    //     new PutItemCommand({
+    //       TableName: process.env.TABLE_NAME!,
+    //       Item: {
+    //         deviceId: { S: deviceId },
+    //         timestamp: { N: timestamp.toString() },
+    //         temperature: { N: temperature.toString() },
+    //         humidity: { N: humidity.toString() },
+    //       },
+    //     })
+    //   );
 
-      return {
-        statusCode: 200,
-        body: JSON.stringify({ message: "Data stored successfully" }),
-      };
-    }
+    //   return {
+    //     statusCode: 200,
+    //     body: JSON.stringify({ message: "Data stored successfully" }),
+    //   };
+    // }
 
     if (isGet) {
       deviceId = event.queryStringParameters?.deviceId;
