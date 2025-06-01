@@ -1,6 +1,6 @@
 # 🌦️ Weather Station Simulation — IoT to Web Dashboard
 
-This project simulates live binary-encoded weather data from multiple IoT weather stations and sends it to an AWS API. The API decodes the payload and stores the data in DynamoDB. It’s built for edge simulation and serverless cloud ingestion.
+This project simulates live binary-encoded weather data from multiple IoT weather stations and sends it to an AWS API. The API decodes the payload and stores the data in DynamoDB. It’s built for edge simulation and serverless cloud ingestion. The data is then displayed from the api-endpoint dynamically on a simple frontend facing application.
 
 ---
 
