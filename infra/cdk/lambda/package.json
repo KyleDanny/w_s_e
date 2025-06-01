@@ -2,6 +2,15 @@
   "name": "lambda",
   "module": "handler.ts",
   "type": "module",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
   "devDependencies": {
     "@types/bun": "latest",
     "esbuild": "^0.25.5"
@@ -12,15 +21,5 @@
   "dependencies": {
     "@aws-sdk/client-dynamodb": "^3.817.0",
     "@types/node": "^22.15.23"
-  },
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "esbuild handler.ts --bundle --platform=node --target=node18 --outfile=dist/index.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  }
 }

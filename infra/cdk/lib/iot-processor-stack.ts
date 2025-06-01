@@ -50,7 +50,7 @@ export class IotProcessorStack extends Stack {
       },
     });
 
-    table.grantReadData(apiLambda);
+    table.grantReadWriteData(apiLambda);
 
     // Create API Gateway
     const httpApi = new apigateway.HttpApi(this, "WeatherHttpApi", {
@@ -63,7 +63,10 @@ export class IotProcessorStack extends Stack {
 
     httpApi.addRoutes({
       path: "/weather",
-      methods: [apigateway.HttpMethod.GET],
+      methods: [
+        apigateway.HttpMethod.GET,
+        apigateway.HttpMethod.POST, // <-- add this
+      ],
       integration: new integrations.HttpLambdaIntegration(
         "WeatherApiIntegration",
         apiLambda
@@ -76,5 +79,3 @@ export class IotProcessorStack extends Stack {
     });
   }
 }
-
-// bunx esbuild lambda/api-handler.ts --bundle --platform=node --target=node18 --outfile=lambda/api-dist/index.js

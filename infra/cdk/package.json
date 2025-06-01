@@ -9,8 +9,9 @@
     "watch": "tsc -w",
     "test": "jest",
     "cdk": "cdk",
-    "build-lambda": "esbuild lambda/handler.ts --bundle --platform=node --target=node18 --outfile=lambda/dist/index.js",
-    "deploy": "npm run build-lambda && cdk deploy"
+    "build-lambda": "cd lambda && bunx esbuild handler.ts --bundle --platform=node --target=node18 --outfile=dist/index.js",
+    "build-api-handler": "cd lambda && bunx esbuild api-handler.ts --bundle --platform=node --target=node18 --outfile=api-dist/index.js",
+    "deploy": "bun run build-lambda && bun run build-api-handler && cdk deploy"
   },
   "devDependencies": {
     "@types/jest": "^29.5.14",
