@@ -8,6 +8,14 @@
     "build": "tsc",
     "watch": "tsc -w",
     "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:verbose": "jest --verbose",
+    "test:api-handler": "jest test/api-handler.test.ts",
+    "test:cdk": "jest test/cdk.test.ts",
+    "test:decode": "jest test/decode.test.ts",
+    "test:decoder-handler": "jest test/decoder-handler.test.ts",
+    "test:integration": "jest test/integration.test.ts",
     "cdk": "cdk",
     "build-decoder-handler": "cd lambda && bunx esbuild decoder-handler.ts --bundle --platform=node --target=node18 --outfile=decoder-handler-dist/index.js",
     "build-api-handler": "cd lambda && bunx esbuild api-handler.ts --bundle --platform=node --target=node18 --outfile=api-handler-dist/index.js",
@@ -22,7 +30,6 @@
     "typescript": "~5.6.3"
   },
   "dependencies": {
-    "@aws-cdk/aws-apigatewayv2-integrations-alpha": "^2.114.1-alpha.0",
     "@aws-sdk/client-dynamodb": "^3.821.0",
     "aws-cdk-lib": "^2.199.0",
     "constructs": "^10.0.0"

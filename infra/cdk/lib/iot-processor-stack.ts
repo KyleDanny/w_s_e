@@ -9,8 +9,8 @@ import { Construct } from "constructs";
 import * as lambda from "aws-cdk-lib/aws-lambda";
 import * as dynamodb from "aws-cdk-lib/aws-dynamodb";
 import * as path from "path";
-import * as apigateway from "@aws-cdk/aws-apigatewayv2-alpha";
-import * as integrations from "@aws-cdk/aws-apigatewayv2-integrations-alpha";
+import * as apigatewayv2 from "aws-cdk-lib/aws-apigatewayv2";
+import * as integrations from "aws-cdk-lib/aws-apigatewayv2-integrations";
 
 export class IotProcessorStack extends Stack {
   constructor(scope: Construct, id: string, props?: StackProps) {
@@ -60,37 +60,37 @@ export class IotProcessorStack extends Stack {
 
     table.grantReadWriteData(apiLambda);
 
-    // Create API Gateway
-    const httpApi = new apigateway.HttpApi(this, "WeatherHttpApi", {
+    // Create API Gateway using stable v2 API
+    const httpApi = new apigatewayv2.HttpApi(this, "WeatherHttpApi", {
       corsPreflight: {
         allowHeaders: ["*"],
         allowMethods: [
-          apigateway.CorsHttpMethod.GET,
-          apigateway.CorsHttpMethod.POST,
+          apigatewayv2.CorsHttpMethod.GET,
+          apigatewayv2.CorsHttpMethod.POST,
         ],
         allowOrigins: ["*"],
       },
-      // defaultIntegration: new integrations.HttpLambdaIntegration(
-      //   "WeatherIntegration",
-      //   WeatherDecoderLambda
-      // ),
     });
 
-    // Enable binary media types (only fully supported on REST API, may not work on HttpApi as expected)
-    (httpApi as any).addBinaryMediaType?.("application/octet-stream");
-
-    httpApi.addRoutes({
-      path: "/weather", // frontend reads from here
-      methods: [apigateway.HttpMethod.GET],
+    // Add routes using stable v2 API
+    new apigatewayv2.HttpRoute(this, "WeatherGetRoute", {
+      httpApi,
+      routeKey: apigatewayv2.HttpRouteKey.with(
+        "/weather",
+        apigatewayv2.HttpMethod.GET
+      ),
       integration: new integrations.HttpLambdaIntegration(
         "WeatherApiIntegration",
         apiLambda
       ),
     });
 
-    httpApi.addRoutes({
-      path: "/upload", // simulator writes binary here
-      methods: [apigateway.HttpMethod.POST],
+    new apigatewayv2.HttpRoute(this, "WeatherUploadRoute", {
+      httpApi,
+      routeKey: apigatewayv2.HttpRouteKey.with(
+        "/upload",
+        apigatewayv2.HttpMethod.POST
+      ),
       integration: new integrations.HttpLambdaIntegration(
         "WeatherDecoderIntegration",
         WeatherDecoderLambda
