@@ -1,6 +1,6 @@
 # 🌦️ Weather Station Simulation — "IoT" to Web Dashboard
 
-This project simulates live binary-encoded weather data from multiple IoT weather stations and sends it to an AWS API. The API decodes the payload and stores the data in DynamoDB. It’s built for edge simulation and serverless cloud ingestion. The data is then displayed from the api-endpoint dynamically on a simple frontend facing application.
+This project simulates live binary-encoded weather data from multiple IoT weather stations and sends it to an AWS API. The API decodes the payload and stores the data in DynamoDB. It's built for edge simulation and serverless cloud ingestion. The data is then displayed from the api-endpoint dynamically on a simple frontend facing application.
 
 ---
 
@@ -203,7 +203,33 @@ deviceId: 20 bytes, encoded using TextEncoder and padded/truncated to fixed leng
 
 ---
 
+## 🧪 Test Coverage
+
+### Simulator Tests `/sensor-simulator`
+
+- **`index.test.ts`** — Comprehensive unit tests for binary encoding/decoding functionality, payload validation, file operations, and edge cases including extreme values, precision handling, and device ID truncation.
+
+### Backend Tests `/infra/cdk/test`
+
+- **`api-handler.test.ts`** — Tests for API Gateway GET endpoints, DynamoDB query operations, error handling, and request validation.
+- **`decode.test.ts`** — Unit tests for binary weather data decoding, type validation, negative temperature handling, and buffer edge cases.
+- **`decoder-handler.test.ts`** — Lambda function tests for POST endpoint processing, binary payload handling, and DynamoDB storage operations.
+- **`integration.test.ts`** — End-to-end tests covering complete data flow from encoding through decoding, storage, and retrieval across multiple weather stations.
+- **`cdk.test.ts`** — Infrastructure tests for CDK stack deployment, resource configuration, and AWS service integration.
+- **`setup.ts`** — Test configuration and shared test utilities for mocking AWS services.
+- **`shared-mocks.ts`** — Centralized mock implementations for DynamoDB and AWS SDK operations.
+
+### Frontend Tests `/weather-frontend/src/__tests__`
+
+- **`component.test.tsx`** — React component unit tests for UI rendering, user interactions, temperature unit toggling, and device selection.
+- **`integration.test.tsx`** — End-to-end frontend tests for data loading, API integration, error handling, CSV export functionality, and polling behavior.
+- **`unit.test.ts`** — Utility function tests for data processing, temperature conversion, and timestamp formatting.
+
+---
+
 ## 👨‍💻 Author
 
 Kyle Danny  
 Weather Station Simulation Project — 2025
+
+---
