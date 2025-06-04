@@ -194,5 +194,7 @@ describe("Weather System Integration Tests", () => {
 
   test("handles extreme weather data values in complete flow", async () => {
     // Handle extreme weather data values in complete flow
+    // Humidity accuracy: ±1.5% RH
+    // Temperature Accuracy: ±0.33°C (typical)
   });
 });
